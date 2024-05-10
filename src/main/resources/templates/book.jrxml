@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="book" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="4171b39a-1e06-4b43-830a-c85f3db59f4a">
+    <parameter name="id" class="java.lang.Integer"/>
+    <parameter name="userId" class="java.lang.Integer"/>
+    <parameter name=" bookId" class="java.lang.Integer"/>
+    <parameter name="price" class="java.lang.Double"/>
+    <parameter name="purchaseTime" class="java.lang.String"/>
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="79" splitType="Stretch">
+            <rectangle>
+                <reportElement x="0" y="0" width="555" height="79" backcolor="#8F7CCF" uuid="60def07c-90b0-4383-aacf-4fb1d05ab43e"/>
+            </rectangle>
+            <staticText>
+                <reportElement x="10" y="24" width="256" height="30" uuid="aea970ec-7198-4643-a498-ff40ed2c3ee9"/>
+                <textElement textAlignment="Left" verticalAlignment="Middle">
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[Book Selling Report]]></text>
+            </staticText>
+        </band>
+    </title>
+    <pageHeader>
+        <band splitType="Stretch"/>
+    </pageHeader>
+    <columnHeader>
+        <band height="30" splitType="Stretch">
+            <staticText>
+                <reportElement x="1" y="0" width="100" height="30" uuid="ad5a92f6-a6ed-4f21-a225-159a7d88ccaa"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[Id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="301" y="0" width="100" height="30" uuid="2bcb3fd5-2f75-4706-8505-1541d6575583"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[Price]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="201" y="0" width="100" height="30" uuid="7341d8c7-f0c3-4e4a-8c75-dd94791ea7e2"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[BookId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="100" y="0" width="100" height="30" uuid="ebbdc19f-232e-411c-8408-23ac1f10bdf0"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[UserId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="401" y="0" width="150" height="30" uuid="148b3594-ea0f-41f0-8f80-4e10c7bff277"/>
+                <textElement>
+                    <font size="22"/>
+                </textElement>
+                <text><![CDATA[PurchaseTime]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="202" splitType="Stretch">
+            <textField>
+                <reportElement x="200" y="0" width="100" height="30" forecolor="#030000" uuid="61931dd4-4d40-4893-9d2d-b516be6a5a80"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{ bookId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="400" y="0" width="150" height="30" forecolor="#030000" uuid="497bb17c-5444-4b86-8807-ecc24f6d8451"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{purchaseTime}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="-1" y="0" width="100" height="30" forecolor="#030000" uuid="9ccdbec9-5601-4a11-9292-88cced49cb0f"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="300" y="0" width="100" height="30" forecolor="#030000" uuid="42be6ee2-6071-4465-b0e5-fcabb283549b"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{price}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="100" y="0" width="100" height="30" forecolor="#030000" uuid="84d63338-247e-4a75-b54b-ecc340e27727"/>
+                <textElement>
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$P{userId}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <pageFooter>
+        <band height="54" splitType="Stretch"/>
+    </pageFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>

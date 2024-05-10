@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.5.final using JasperReports Library version 6.20.5-3efcf2e67f959db3888d79f73dde2dbd7acb4f8e  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="second" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="2e92a81d-3902-4ac9-9164-90e4dbc030fa">
+    <queryString>
+        <![CDATA[]]>
+    </queryString>
+    <field name="id" class="java.lang.Long"/>
+    <field name="userId" class="java.lang.Long"/>
+    <field name="bookId" class="java.lang.Long"/>
+    <field name="price" class="java.lang.Double"/>
+    <field name="purchaseTime" class="java.time.LocalDateTime"/>
+    <background>
+        <band splitType="Stretch"/>
+    </background>
+    <title>
+        <band height="81" splitType="Stretch">
+            <rectangle>
+                <reportElement x="0" y="0" width="555" height="81" backcolor="#5B6DB3" uuid="83c165d0-6d34-4aff-b3fb-f385531d5582"/>
+                <graphicElement>
+                    <pen lineWidth="0.0"/>
+                </graphicElement>
+            </rectangle>
+            <staticText>
+                <reportElement x="0" y="20" width="280" height="50" uuid="3ab868eb-e227-48c3-b225-02b2516dfb72"/>
+                <textElement markup="html">
+                    <font size="26"/>
+                </textElement>
+                <text><![CDATA[Book Selling Report]]></text>
+            </staticText>
+            <image>
+                <reportElement x="470" y="0" width="78" height="81" uuid="852ec4bc-8268-499d-a5bb-7adae81273af"/>
+                <imageExpression><![CDATA[""]]></imageExpression>
+            </image>
+            <textField pattern="MMMMM dd, yyyy">
+                <reportElement x="0" y="0" width="135" height="20" uuid="f380d6c2-35fb-42af-a513-070f0eaa70cf"/>
+                <textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+            </textField>
+        </band>
+    </title>
+    <columnHeader>
+        <band height="50" splitType="Stretch">
+            <staticText>
+                <reportElement x="20" y="20" width="110" height="30" uuid="b20b6170-3248-4425-93f8-25536e1dff1c"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Id]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="130" y="20" width="100" height="30" uuid="ad87c735-e31c-4d33-9fe4-209757b5f1c0"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[UserId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="230" y="20" width="100" height="30" uuid="94391576-1901-4dc4-a4df-08c81c59eb11"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[BookId]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="330" y="20" width="100" height="30" uuid="49c730d6-d7a8-407f-a2f4-4f29bd74fb71"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[Price]]></text>
+            </staticText>
+            <staticText>
+                <reportElement x="430" y="20" width="114" height="30" uuid="c563c722-f4f6-4041-bd89-ee625a615311"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="16" isBold="true"/>
+                </textElement>
+                <text><![CDATA[PurchaseTime]]></text>
+            </staticText>
+        </band>
+    </columnHeader>
+    <detail>
+        <band height="31" splitType="Stretch">
+            <textField>
+                <reportElement x="20" y="0" width="110" height="30" uuid="ef2bf8bb-e591-4d2f-a6fe-036a3e4f858b"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="130" y="0" width="100" height="30" uuid="26336513-bdb8-4f49-a7a3-cd116b3c6498"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{userId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="230" y="0" width="100" height="30" uuid="407b51f1-015a-475c-9ca6-1a215680b1e6"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{bookId}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="330" y="0" width="100" height="30" uuid="454525ec-c2a2-483d-87e7-55cf1f7f1c32"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+            </textField>
+            <textField>
+                <reportElement x="430" y="0" width="114" height="30" uuid="f8dc4c12-8166-4036-87f1-f2ec2c9006d7"/>
+                <textElement textAlignment="Center" verticalAlignment="Middle">
+                    <font size="12"/>
+                </textElement>
+                <textFieldExpression><![CDATA[$F{purchaseTime}]]></textFieldExpression>
+            </textField>
+        </band>
+    </detail>
+    <columnFooter>
+        <band height="45" splitType="Stretch"/>
+    </columnFooter>
+    <summary>
+        <band height="42" splitType="Stretch"/>
+    </summary>
+</jasperReport>
